@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-dom";
 
 export default function Dashboard() {
   return (
