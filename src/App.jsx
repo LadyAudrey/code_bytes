@@ -22,7 +22,7 @@ function App() {
           </h1>
           <h2 className="text-6xl text-amber-200">{questionBank[question]}</h2>
           <div>
-            <div className="columns-3">
+            <div className="flex-row columns-3">
               <form onSubmit={handleSubmit}>
                 <textarea
                   className="bg-cyan-300 text-amber-950 m-36"
