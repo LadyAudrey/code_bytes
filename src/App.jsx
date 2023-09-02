@@ -15,31 +15,33 @@ function App() {
 
   return (
     <>
-      <div className="h-screen bg-slate-700 text-3xl overflow-scroll max-w-screen-2xl mx-auto p-8">
-        <h1 className="text-8xl object-center">Welcome to Code Bytes!</h1>
-        <h2 className="text-6xl">{questionBank[question]}</h2>
-        <div>
-          <div className="columns-2">
-            <div>
+      <div className="h-screen bg-slate-700 text-3xl overflow-scroll">
+        <div className="max-w-screen mx-auto flex-col place-content-end">
+          <h1 className="text-amber-100 text-8xl object-center">
+            Welcome to Code Bytes!
+          </h1>
+          <h2 className="text-6xl text-amber-200">{questionBank[question]}</h2>
+          <div>
+            <div className="columns-3">
               <form onSubmit={handleSubmit}>
                 <textarea
-                  className="bg-cyan-300 m-36"
+                  className="bg-cyan-300 text-amber-950 m-36"
                   name="user_code"
                   id="userCode"
                   placeholder="Type your code here"
                 ></textarea>
-                <button className="bg-orange-200 p-5" type="submit">
-                  Run
-                </button>
               </form>
-            </div>
-            <div className="bg-cyan-300" id="print">
-              I'm the output div
+              <button className="bg-orange-200 p-5 m-5" type="submit">
+                Run
+              </button>
+              <div className="bg-cyan-300 text-amber-950" id="print">
+                I'm the output div
+              </div>
             </div>
           </div>
-        </div>
-        {/* // Assess output to create passedBoolean // update html based on
+          {/* // Assess output to create passedBoolean // update html based on
         passedBoolean */}
+        </div>
       </div>
     </>
   );
