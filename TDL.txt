@@ -4,3 +4,17 @@ MVP outline
 TDL-
 Front end-
 Back end-
+
+
+difficulty deploying to gitpages-
+solution:
+-npm install --save -dev gh-pages
+    -- creates dist file, converts it to 
+added base: and the url value to vit.config defineConfig
+added homepage key and "https://ladyaudrey.github.io/code_bytes/" to package.json
+    -- "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+
+change githubg settings to make page from the gh-pages branch
+github pages settings- cog in About area
+    -click to use the launched page

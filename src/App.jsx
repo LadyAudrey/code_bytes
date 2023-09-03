@@ -32,7 +32,7 @@ function App() {
           <div>
             <div className="interaction">
               <div className="code-block bg-cyan-300">
-                <img src="/(array) =_ {.svg" />
+                <img src="/topFunction.svg" />
                 <form onSubmit={handleSubmit}>
                   <textarea
                     className="bg-slate-700 text-amber-100 border-4 rounded-md border-amber-900 "
@@ -41,7 +41,7 @@ function App() {
                     placeholder="// Your code goes here; please return an array with your solution
                     return [anArray]"
                   ></textarea>
-                  <img src="/public/}.svg" />
+                  <img src="/bottomFunction.svg" />
                   <button className="bg-orange-200" id="submit" type="submit">
                     Run
                   </button>
