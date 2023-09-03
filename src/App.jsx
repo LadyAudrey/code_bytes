@@ -15,7 +15,7 @@ function App() {
     const form = e.target;
     const formData = new FormData(form);
     const formJson = Object.fromEntries(formData.entries());
-    const runUserFunction = new Function("array", formJson.user_code);
+    const runUserFunction = new Function(("array", formJson.user_code));
     const userReturn = runUserFunction(miniWords);
     setOutput(userReturn);
     setHasPassed(questionBank[question].testFunction(userReturn));
