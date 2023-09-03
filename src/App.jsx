@@ -18,6 +18,7 @@ function App() {
     const runUserFunction = new Function(("array", formJson.user_code));
     const userReturn = runUserFunction(miniWords);
     setOutput(userReturn);
+    console.log(questionBank[question]);
     setHasPassed(questionBank[question].testFunction(userReturn));
   }
 
@@ -56,7 +57,6 @@ function App() {
               hasPassed={hasPassed}
               callback={setQuestion}
               index={question}
-              handleSubmit={handleSubmit}
             />
           </div>
         </div>

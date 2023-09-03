@@ -1,11 +1,10 @@
 export default function Feedback(props) {
-  const { output, hasPassed, callback, index, handleSubmit } = props;
+  const { output, hasPassed, callback, index } = props;
   if (output == "Your return values will appear here") {
     return (
       <p>Please submit code containing a return statement holding an array</p>
     );
   } else if (hasPassed == true) {
-    handleSubmit("");
     return (
       <>
         <div className="flex flex-row justify-around">
