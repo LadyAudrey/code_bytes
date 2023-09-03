@@ -56,6 +56,7 @@ function App() {
               output={output}
               hasPassed={hasPassed}
               callback={setQuestion}
+              callback2={setOutput}
               index={question}
             />
           </div>
